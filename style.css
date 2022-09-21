@@ -99,7 +99,7 @@ hr {
   display: inline-block;
   border: 0;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: auto;
   background: #262626;
   color: #fff;
   font-size: 15px;
@@ -371,7 +371,7 @@ hr {
 
   .cards-banner-one .contenido,
   .cards-banner-two .contenido {
-    width: 100%;
+    width: 80%;
   }
 
   .pie-links .contenedor-pie-pagina {
