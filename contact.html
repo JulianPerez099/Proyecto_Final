@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" type="text/css" href="style-contac.css" />
+
+    <!-- Fuente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fuente "Awesome" -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="botones-menu">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="contenedor">
+      <!-- Navegación -->
+      <nav class="nav-principal">
+        <!-- Marca -->
+        <img src="img/brand.png" alt="TechNews Logo" class="nav-marca" />
+
+        <!-- Nav izquierdo -->
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+
+          <li>
+            <a href="shop.html">Tienda</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contacto</a>
+          </li>
+
+          <li>
+            <a href="us.html">Quien soy</a>
+          </li>
+        </ul>
+
+        <!-- Nav Derecho -->
+        <ul class="nav-menu-derecho">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr />
+
+      <section class="box">
+        <div id="form">
+          <form>
+            <label for="Nombre">Nombre</label>
+            <input
+              type="text"
+              name="Nombre"
+              id="Nombre"
+              placeholder="Ingresa tu nombre"
+              maxlength="30"
+            />
+
+            <label for="Apellidos">Apellidos</label>
+            <input
+              type="text"
+              name="Apellidos"
+              id="Apellidos"
+              placeholder="Ingresa tus apellidos"
+              maxlength="30"
+            />
+
+            <label>Sexo</label>
+            <input
+              type="radio"
+              name="opcion"
+              id="Masculino"
+              value="Masculino"
+            />
+            Masculino
+            <input type="radio" name="opcion" id="Femenino" value="Femenino" />
+            Femenino
+
+            <input
+              type="radio"
+              name="opcion"
+              id="Otro"
+              value="Prefiero no decir"
+              onclick="mostrarOpcion()"
+            />
+            Prefiero no decir
+
+            <label for="Email">Correo</label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="correo@empresa.com"
+              maxlength="30"
+            />
+
+            <label for="Asunto">Asunto</label>
+            <input
+              type="text"
+              name="Asunto"
+              id="Asunto"
+              placeholder="Digita el asunto o motivo del Contacto"
+              maxlength="30"
+            />
+
+            <label for="Mensaje">Mensaje</label>
+            <textarea
+              name="textarea"
+              rows="10"
+              placeholder="En esta &aacute;rea podras indicar tu solicitud o mensaje. M&aacute;ximo 2000 caracteres"
+              maxlength="2000"
+            ></textarea>
+
+            <input
+              type="checkbox"
+              value="Aceptar_Informacion"
+              id="Info"
+              required
+            />
+            <label for="Info" class="Info"
+              >Deseo recibir informaci&oacute;n sobre novedades y ofertas</label
+            >
+
+            <br />
+
+            <input type="checkbox" value="Aceptar_RGPD" id="rgpd" required />
+            <label for="rgpd" class="rgpd"
+              >He leido y acepto las
+              <a href="#" target="_blanck">condiciones generales</a>
+              del programa y la normativa sobre protecci&oacute;n de datos
+            </label>
+
+            <br />
+
+            <center>
+              <input type="button" value="Enviar" id="Enviar" />
+
+              <input type="button" value="Limpiar" id="Limpiar" />
+            </center>
+
+            <br />
+            <br />
+            <br />
+          </form>
+        </div>
+      </section>
+
+      <!-- Redes Sociales -->
+      <section class="redes-sociales">
+        <p>Sigueme "NOMBRE TIENDA"</p>
+        <div class="links">
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://linkdin.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Links Pie de Página -->
+    <div class="pie-links">
+      <div class="contenedor-pie-pagina">
+        <ul>
+          <li>
+            <a href="#">
+              <h3>INDEX</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#">Tienda</a>
+          </li>
+
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+
+          <li>
+            <a href="#">Quien soy</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <h3>INDEX 2</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#">Tienda</a>
+          </li>
+
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+
+          <li>
+            <a href="#">Quien soy</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <h3>INDEX 3</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#">Tienda</a>
+          </li>
+
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+
+          <li>
+            <a href="#">Quien soy</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <h3>INDEX 4</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#">Tienda</a>
+          </li>
+
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+
+          <li>
+            <a href="#">Quien soy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina">
+      <h3>"Nombre tienda" Copyright</h3>
+    </footer>
+
+    <!-- Scripts en Java -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
