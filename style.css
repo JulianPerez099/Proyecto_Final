@@ -99,7 +99,7 @@ hr {
   display: inline-block;
   border: 0;
   font-weight: bold;
-  padding: auto;
+  padding: 10px 20px;
   background: #262626;
   color: #fff;
   font-size: 15px;
@@ -129,7 +129,7 @@ hr {
   background: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   margin-top: 4%;
-  padding: 20px;
+  padding: 10px;
   color: #ffffff;
   border-radius: 15px;
 }
