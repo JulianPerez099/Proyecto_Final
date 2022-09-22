@@ -94,6 +94,26 @@ hr {
   font-style: italic;
 }
 
+#second-promo {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+#second-promo-description {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#third-promo {
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+#third-promo-description {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -325,12 +345,32 @@ hr {
 
 @media (max-width: 700px) {
   #first-promo {
-    font-size: 2em;
+    font-size: 2.2em;
+    color: #ffffff;
+  }
+
+  #second-promo {
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  #third-promo {
+    font-size: 1.3em;
     color: #ffffff;
   }
   
   #first-promo-description {
-    font-size: 2em;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+
+  #second-promo-description {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+
+  #third-promo-description {
+    font-size: 1.2em;
     font-style: italic;
   }
   
@@ -427,6 +467,73 @@ hr {
 }
 
 @media (max-width: 500px) {
+  #first-promo {
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  #first-promo-description {
+    font-size: 1em;
+    font-style: italic;
+  }
+
+  #second-promo {
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  #second-promo-description {
+    font-size: 0.8em;
+    font-style: italic;
+  }
+
+  #third-promo {
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  #third-promo-description {
+    font-size: 0.95em;
+    font-style: italic;
+  }
+  
+  .Primera-Noticia {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .Primera-Noticia h2 {
+    font-weight: bold;
+    color: #f6eeee;
+  }
+  
+  .Segunda-Noticia {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .Segunda-Noticia h2 {
+    font-weight: bold;
+    color: #f6eeee;
+  }
+  
+  .Tercera-Noticia {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
   .nuevas-promos {
     grid-template-columns: 1fr;
   }
