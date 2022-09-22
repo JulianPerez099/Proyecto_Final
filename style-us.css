@@ -73,6 +73,22 @@ hr {
 
 /* Menú */
 
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 .section {
   width: 100%;
 }
@@ -81,7 +97,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   position: relative;
-  
+  z-index: -1;
 }
 
 video {
