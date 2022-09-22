@@ -324,6 +324,53 @@ hr {
 /* Para dispositivos moviles */
 
 @media (max-width: 700px) {
+  #first-promo {
+    font-size: 1em;
+    color: #ffffff;
+  }
+  
+  #first-promo-description {
+    font-size: 1em;
+    font-style: italic;
+  }
+  
+  .Primera-Noticia {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .Primera-Noticia h2 {
+    font-weight: bold;
+    color: #f6eeee;
+  }
+  
+  .Segunda-Noticia {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .Segunda-Noticia h2 {
+    font-weight: bold;
+    color: #f6eeee;
+  }
+  
+  .Tercera-Noticia {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
   .botones-menu {
     display: block;
   }
