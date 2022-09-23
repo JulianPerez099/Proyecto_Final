@@ -22,6 +22,7 @@
 
     <title>Contacto</title>
   </head>
+
   <body>
     <div class="botones-menu">
       <i class="fas fa-bars fa-2x"></i>
@@ -67,8 +68,11 @@
       <section class="box">
         <div id="form">
           <form>
-            <label for="Nombre">Nombre</label>
+            <label for="Nombre"
+              >Nombre(s) &nbsp;<font color="red">*</font></label
+            >
             <input
+              required
               type="text"
               name="Nombre"
               id="Nombre"
@@ -76,8 +80,11 @@
               maxlength="30"
             />
 
-            <label for="Apellidos">Apellidos</label>
+            <label for="Apellidos"
+              >Apellidos &nbsp;<font color="red">*</font></label
+            >
             <input
+              required
               type="text"
               name="Apellidos"
               id="Apellidos"
@@ -85,7 +92,7 @@
               maxlength="30"
             />
 
-            <label>Sexo</label>
+            <label>Sexo &nbsp;<font color="red"></font></label>
             <input
               type="radio"
               name="opcion"
@@ -93,6 +100,7 @@
               value="Masculino"
             />
             Masculino
+
             <input type="radio" name="opcion" id="Femenino" value="Femenino" />
             Femenino
 
@@ -101,12 +109,12 @@
               name="opcion"
               id="Otro"
               value="Prefiero no decir"
-              onclick="mostrarOpcion()"
             />
             Prefiero no decir
 
-            <label for="Email">Correo</label>
+            <label for="Email">Correo &nbsp;<font color="red">*</font></label>
             <input
+              required
               type="email"
               name="Email"
               id="Email"
@@ -114,8 +122,9 @@
               maxlength="30"
             />
 
-            <label for="Asunto">Asunto</label>
+            <label for="Asunto">Asunto &nbsp;<font color="red">*</font></label>
             <input
+              required
               type="text"
               name="Asunto"
               id="Asunto"
@@ -123,9 +132,13 @@
               maxlength="30"
             />
 
-            <label for="Mensaje">Mensaje</label>
+            <label for="Mensaje"
+              >Mensaje &nbsp;<font color="red">*</font></label
+            >
             <textarea
+              required
               name="textarea"
+              id="Mensaje"
               rows="10"
               placeholder="En esta &aacute;rea podras indicar tu solicitud o mensaje. M&aacute;ximo 2000 caracteres"
               maxlength="2000"
@@ -137,6 +150,7 @@
               id="Info"
               required
             />
+
             <label for="Info" class="Info"
               >Deseo recibir informaci&oacute;n sobre novedades y ofertas</label
             >
@@ -148,14 +162,25 @@
               >He leido y acepto las
               <a href="#" target="_blanck">condiciones generales</a>
               del programa y la normativa sobre protecci&oacute;n de datos
-            </label>
+              &nbsp;<font color="red">*</font></label
+            >
 
             <br />
 
             <center>
-              <input type="button" value="Enviar" id="Enviar" />
+              <input
+                type="button"
+                value="Enviar"
+                id="Enviar"
+                onclick="validarCamposVacios()"
+              />
 
-              <input type="button" value="Limpiar" id="Limpiar" />
+              <input
+                type="button"
+                value="Limpiar"
+                id="Limpiar"
+                onclick="limpiarFormulario()"
+              />
             </center>
 
             <br />
@@ -168,7 +193,7 @@
       <!-- Redes Sociales -->
       <section class="redes-sociales">
         <p>VitaTec</p>
-        
+
         <div class="links">
           <a href="https://facebook.com">
             <i class="fab fa-facebook-f"></i>
@@ -287,6 +312,6 @@
 
     <!-- Scripts en Java -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="index.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
