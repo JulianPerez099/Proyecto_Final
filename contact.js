@@ -1,3 +1,6 @@
+/* Esta funcion nos valida su existen campos vacios y no deja avanzar hasta que no se rellenen o completen 
+dichos campos */
+
 function validarCamposVacios() {
   if (!document.getElementById("Nombre").value) {
     console.log('Debe rellenar el campo de "Nombre"');
@@ -22,8 +25,12 @@ function validarCamposVacios() {
     console.log('Debe rellenar el campo de "Mensaje"');
     return false;
   }
+  /* Al validar que todos los campos se encuentren llenos correctamente se procede a ejecutar la función 
+  de abajo "validarCamposDelUsuario" */
   validarCamposDelUsuario();
 }
+
+/* Esta funcion nos valida y muestra la informacion ingresada por el usuario */
 
 function validarCamposDelUsuario() {
   var seleccion = "";
@@ -58,6 +65,8 @@ function validarCamposDelUsuario() {
       seleccion
   );
 }
+
+/* Esta funcion se utiliza en el boton de limpiar en el HTML para limpiar todas las casillas del formulario */
 
 function limpiarFormulario() {
   document.getElementById("Nombre").value = "";
