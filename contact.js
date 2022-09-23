@@ -1,3 +1,9 @@
+/* Esta seccion nos despliega el nav (El boton de menu en dispositivos moviles) */
+
+document.querySelector(".botones-menu").addEventListener("click", () => {
+  document.querySelector(".nav-menu").classList.toggle("show");
+});
+
 /* Esta funcion nos valida su existen campos vacios y no deja avanzar hasta que no se rellenen o completen 
 dichos campos */
 
